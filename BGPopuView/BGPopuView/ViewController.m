@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 100, 100, 100)];
-    [btn setTitle:@"弹框" forState:0];
+    [btn setTitle:@"点击弹框" forState:0];
     [btn setTitleColor:[UIColor redColor] forState:0];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     
@@ -32,8 +32,13 @@
 
 -(void)btnAction
 {
-    NSInteger typeNum = arc4random()%10;
-    [BGPopupView showCenterView:self.popView animationType:typeNum];
+    int typeNum = arc4random()%10;
+//    [BGPopupView showCenterView:self.popView animationType:typeNum];
+    
+    [BGPopupView showView:self.popView frame:CGRectMake(50, 300, 200, 200) bgAlpa:0.1 animationType:typeNum hiddenBlock:^{
+        NSLog(@"消失");
+    }];
+    
 }
 
 

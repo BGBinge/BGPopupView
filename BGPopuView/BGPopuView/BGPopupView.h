@@ -37,6 +37,8 @@ typedef void(^HiddenBlock)(void);
 @property (nonatomic, copy) HiddenBlock hiddenBlock;// 弹框隐藏时调用的block
 
 
+
+
 /**
  * @brief 弹出一个view
  *

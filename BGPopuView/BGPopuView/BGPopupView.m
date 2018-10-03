@@ -39,6 +39,10 @@
         data = [[self alloc] init];
         [data loadBaceView];
     });
+    if (data.popView)
+    {
+        [data hiddenPopView];
+    }
     return data;
 }
 
@@ -60,8 +64,6 @@
 /// 消失弹出框
 -(void)hiddenPopView
 {
-    self.popView.frame = self.popFrame;
-    self.popView.alpha = 1;
     for (UIView *subView in self.subviews)
     {
         if (subView != self.backBtn)
@@ -74,10 +76,15 @@
         self.hiddenBlock();
         self.hiddenBlock = nil;
     }
+    self.popView.frame = self.popFrame;
+    self.popView.alpha = 1;
     self.backBtn.alpha = 0;
     self.hiddenKey = @"";
+    self.popFrame = CGRectZero;
+    self.popView = nil;
     [self removeFromSuperview];
 }
+
 
 /**
  * @brief 弹出一个view
