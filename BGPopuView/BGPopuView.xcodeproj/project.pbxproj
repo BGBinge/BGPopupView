@@ -15,6 +15,7 @@
 		77BD68A72165118A00D4D6E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD68A62165118A00D4D6E6 /* main.m */; };
 		77BD68B12165118A00D4D6E6 /* BGPopuViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD68B02165118A00D4D6E6 /* BGPopuViewTests.m */; };
 		77BD68BC2165118A00D4D6E6 /* BGPopuViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD68BB2165118A00D4D6E6 /* BGPopuViewUITests.m */; };
+		77BD68CB2165139B00D4D6E6 /* BGPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BD68CA2165139B00D4D6E6 /* BGPopupView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		77BD68B72165118A00D4D6E6 /* BGPopuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGPopuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BD68BB2165118A00D4D6E6 /* BGPopuViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGPopuViewUITests.m; sourceTree = "<group>"; };
 		77BD68BD2165118A00D4D6E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BD68C92165139A00D4D6E6 /* BGPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGPopupView.h; sourceTree = "<group>"; };
+		77BD68CA2165139B00D4D6E6 /* BGPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGPopupView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		77BD68962165118800D4D6E6 /* BGPopuView */ = {
 			isa = PBXGroup;
 			children = (
+				77BD68C92165139A00D4D6E6 /* BGPopupView.h */,
+				77BD68CA2165139B00D4D6E6 /* BGPopupView.m */,
 				77BD68972165118800D4D6E6 /* AppDelegate.h */,
 				77BD68982165118800D4D6E6 /* AppDelegate.m */,
 				77BD689A2165118800D4D6E6 /* ViewController.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BD68CB2165139B00D4D6E6 /* BGPopupView.m in Sources */,
 				77BD689C2165118800D4D6E6 /* ViewController.m in Sources */,
 				77BD68A72165118A00D4D6E6 /* main.m in Sources */,
 				77BD68992165118800D4D6E6 /* AppDelegate.m in Sources */,
