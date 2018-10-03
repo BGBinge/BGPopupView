@@ -32,7 +32,8 @@
 
 -(void)btnAction
 {
-    [BGPopupView showCenterView:self.popView animationType:BGPopupAnimationTypeZoom];
+    NSInteger typeNum = arc4random()%10;
+    [BGPopupView showCenterView:self.popView animationType:typeNum];
 }
 
 

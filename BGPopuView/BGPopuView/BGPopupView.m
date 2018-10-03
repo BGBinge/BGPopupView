@@ -20,6 +20,7 @@
 @property (nonatomic, strong) UIView *popView; // 弹出的控件
 @property (nonatomic, assign) BGPopupAnimationType animalType;
 @property (nonatomic, assign) CGRect popFrame;
+@property (nonatomic, assign) CGFloat popAlpha;
 
 
 @end
@@ -60,6 +61,7 @@
 -(void)hiddenPopView
 {
     self.popView.frame = self.popFrame;
+    self.popView.alpha = 1;
     for (UIView *subView in self.subviews)
     {
         if (subView != self.backBtn)
@@ -406,6 +408,7 @@
         case 0:
         {
             //无动画效果
+            [self hiddenPopView];
         }
             break;
         case 1:
