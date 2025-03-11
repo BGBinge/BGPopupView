@@ -1,7 +1,6 @@
 # BGPopupView
 ## 一行代码实现弹出控件（弹窗）
 
-
 /**
 * @brief 弹出一个view
 *
